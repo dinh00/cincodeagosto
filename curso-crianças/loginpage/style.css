@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;700&display=swap');
+@import url('main.css');
+@import url('esqueci.css');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --cor-de-fundo: rgb(69, 151, 179);
+    --cor-de-div: lightblue;
+}
+.esqueciasenha{
+    color: black;
+    text-decoration: none;
+}
+body{
+    background-color: var(--cor-de-fundo);
+}
+main{    
+    background: rgb(69, 151, 179);
+}
+.cabecalho{
+    background: rgb(69, 151, 179);
+    text-align: center;
+    font-size: 2em;
+    padding: 2em;
+}
+.cabecalho__titulo{
+    font-size: 80px;
+    font-family: 'Great Vibes';
+}
+.login{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.651);
+    width: 60%;
+    margin: auto;
+    border-radius: 40px;
+    background-color: lightblue;
+    position: relative;
+    padding: 2em 0;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.login__img{
+    position: absolute;
+    bottom: 83%;
+    transition: trasform 0.3s ease;
+}
+.login__img:hover{
+    transform: scale(1.2);
+}
+.login__usuario{
+    padding: 16px 32px;
+    margin: 16px;
+    font-size: 16px;
+    border-radius: 24px;
+    border: solid 2px black;
+    background: transparent;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.login__usuario:hover{
+    transform: scale(1.09);
+    background-color: rgb(138, 184, 199)
+}
+.login__usuario::placeholder{
+    color: black;
+    font-size: 16px;
+    
+}
+
+.login__password{
+    font-size: 16px;
+    background: transparent;
+    padding: 16px 32px;
+    border-radius: 24px;
+    border: 2px solid black;
+    margin-left: 3.5em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.login__password:hover{
+    transform: scale(1.09);
+    background-color: rgb(138, 184, 199);
+}
+.login__password::placeholder{
+    color: black;
+    font-size: 16px;
+    
+}
+.ir{
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    margin-left: 16px;
+    background-color: rgb(68, 113, 128);
+    padding: 8px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+.ir:hover{
+    background-color: rgb(44, 86, 100);
+}
+.login__senha{
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+}
+#senha{
+    margin: 0 .5em 0 3em;
+}
+.foot__titulo{
+    text-align: center;
+    padding: 8px 0 16px;
+    width: 30%;
+    margin: auto;
+    border-radius: 0 0px 14px 14px;
+    font-size: 16px;
+    background: lightblue;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-weight: 500;
+}
+.rodape{
+    
+    background: rgb(69, 151, 179);
+}
+.rodape__titulo{
+    text-align: center;
+    padding: 1em 0;
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+}
+.icons{
+    background-color: rgb(58, 123, 145);
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    padding-bottom: 2em;
+    font-size: 24px;
+}
+.icons > a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+@media (max-width: 600px) {
+    .login{
+        padding-top: 50px;
+    }
+    .cabecalho__titulo{
+        font-size: 50px;
+    }   
+    .login__usuario{
+        font-size: 12px;       
+    }
+    .login__password{
+        font-size: 12px;
+        margin: 0;
+    }
+    .div__senha{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .ir{
+        margin: 0;
+    }
+}

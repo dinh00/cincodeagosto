@@ -1,0 +1,123 @@
+.cabecalho__main-titulo{
+    text-align: center;
+    font-family: 'Great Vibes';
+    margin: 23px 0;
+    font-size: 50px;
+}
+.mensagem{
+    margin: 15px 0;
+    background-color: rgb(129, 168, 180);
+    padding: 10px 0 25px 0;
+}
+.mensagem__titulo{
+    padding: 0 0 10px 0;
+    background-color: rgb(129, 168, 180);
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 32px;
+}
+.mensagem__div-inteira{
+    background-color: var(--cor-de-div);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 30px;
+    width: 600px;
+    margin:  15px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    transition: transform 0.3s ease;
+}
+.mensagem__div-inteira:hover{
+    transform: scale(1.10);
+}
+.mensagem__div-foto{
+    margin-right: 2em;
+}
+.primeira-foto{
+    width: 250px;
+    height: 390px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+.primeira-foto:hover{
+    transform: scale(1.09);
+}
+.primeira-foto__texto{
+    text-align: center;
+    font-size: 25px;
+    font-style: 'Playfair Display';
+}
+.div__descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.mensagem__div-titulo{
+    font-family: 'Playfair Display', cursive;
+    font-weight: 700;
+    font-size: 35px;
+}
+.mensagem__div-descricao{
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    text-align: justify;
+}
+#favorito{
+    margin-right: 200px;    
+}
+.icone__todos{
+    margin-right: 200px;
+}
+span{
+    text-decoration: line-through;
+}
+.neguinha{
+    border-radius: 20px;
+    padding: 30px 0;
+    margin: 40px;
+    background-color: var(--cor-de-div);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.foto__neguinha{
+    width: 350px;
+    height: 600px;
+    margin: auto;
+}
+
+@media (max-width: 500px){
+    .mensagem{
+        width: 100%;
+        
+    }
+    .mensagem__div-inteira{
+        width: 70%;
+        flex-direction: column;
+    }
+    .primeira-foto__texto{
+        font-size: 25px;
+    }
+    .mensagem__div-titulo{
+        font-size: 32px;
+        text-align: center;
+    }
+    .primeira-foto__texto{
+        padding: 20px 0 20px 25px;
+    }
+    .div__descricao{
+        gap: 30px;
+    }
+    .primeira-foto{
+        margin-left: 30px;
+    }
+    .neguinha{
+        font-size: 20px;
+    }
+    .mensagem__icones{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+}

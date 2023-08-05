@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05/08/2021</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">05/08/2021</h1>
+    </header>
+    <main>
+        <section class="login">
+            <img class="login__img" src="../imagens/login-perfil/icons8-usuário-mulher-com-círculo-80.png" alt="Imagem de Pefil">
+            <input type="text" placeholder="Usuario" class="login__usuario" autocomplete="off" name="" id="nome">
+            <div class="div__senha">
+                <input type="password" placeholder="Senha" class="login__password" name="" id="">
+                <a class="ir" onclick="verificarNome()" id="botao_acesso" href="main.html">IR</a>
+            </div>
+            <div class="login__senha">
+                <a class="esqueciasenha" href="esqueci.html">Esqueci a senha</a>
+                <input type="checkbox" id="senha">
+                <label for="senha">
+                    <p >Lembrar senha</p>
+                </label>
+            </div>
+        </section>
+        
+        <p class="foot__titulo">Login</p>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__titulo">Adamo e Nath</p>
+        <hr>
+        <p class="icons">Icon by <a target="_blank" href="https://icons8.com/icon/21640/usu%C3%A1rio-mulher-com-c%C3%ADrculo">Icons8</a></p>
+    </footer>
+    <script>
+    function verificarNome() {
+      var nome_input = document.getElementById('nome').value;
+      var senha_input = document.getElementById('senha').value;
+      var nome_valido = 'Natalia da Silva Machado Gomes';
+
+      if (nome_input === nome_valido) {
+        // Se as credenciais estiverem corretas, redirecionar para 'main.html'
+        window.location.href = 'main.html';
+      } else {
+        // Se as credenciais estiverem incorretas, mostrar o alerta
+        alert('Usuário incorreto. Apenas uma usuária tem acesso!');
+        event.preventDefault();
+      }
+    }
+    </script>
+</body>
+</html>
